@@ -54,7 +54,7 @@ if __name__ == "__main__":
         loop+=1
 
 print("Max: {0:.3f} in loop #{1}".format(max(times), [i for i,x in enumerate(times) if x == max(times)]))
-print("Max: {0:.3f} in loop #{1}".format(min(times), [i for i,x in enumerate(times) if x == min(times)]))
+print("Min: {0:.3f} in loop #{1}".format(min(times), [i for i,x in enumerate(times) if x == min(times)]))
 print("Total: {0:.3f}".format(sum(times)))
 print("Average: {0:.3f}".format((sum(times) / float(len(times)))))
     
