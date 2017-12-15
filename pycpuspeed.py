@@ -43,7 +43,7 @@ if __name__ == "__main__":
     times = []
     total_time = 0
 
-    while total_time < arg_time * 6:
+    while total_time < arg_time * 60:
         time1 = time.time()
         stress()
         time2 = time.time()
