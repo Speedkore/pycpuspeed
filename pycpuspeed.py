@@ -34,11 +34,14 @@ def stress():
 
 
 if __name__ == "__main__":
-    if len(sys.argv)==2:
-        arg_time = int(sys.argv[1])
-    else:
+    if len(sys.argv)!=2:
         print(usage)
-        exit(0)
+        exit(1)
+    try:
+       arg_time = int(sys.argv[1])
+    except ValueError:
+        print(usage)
+        exit(1)
     loop = 0
     times = []
     total_time = 0
